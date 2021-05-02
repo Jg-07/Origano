@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: comfortaa;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg,rgb(0, 105, 153),rgb(0, 175, 175),rgb(0, 247, 193)); 
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    top:0;
+    transition: all 0.5s ease 0s;
+    background-color: black;
+    color: white;
+    position: fixed;
+   display: flex;
+   z-index: 999;
+   width: 100%;
+   padding: 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+.navContents{
+    display: flex;
+    margin-right: 20px;
+}
+.navItem{
+    cursor: pointer;
+    margin-left: 25px;
+    font-weight: bold;
+    margin-right: 25px;
+    font-size: medium;
+}
+.navItem:hover{
+    color: rgb(0, 204, 255);
+    transition: all 0.5s ease 0s;
+}
+.navBrand img{
+    border-radius: 7px;
+}
+.navBrand{
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+    border-radius:5px;
+    align-items: center;
+}
+.navcolor{
+    color: black;
+    background-color: white;
+}
+.body1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bodyBlock1{
+    cursor: pointer;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    background: url("BG.jpg");
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.bodyBlock2{
+    width: 70%;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 30px;
+    margin: 130px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.bodyBlock3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    grid-gap: 30px;
+}
+.fHead{
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.fHead::after{
+    content: 'Origano provides you with remarkable features and Also best delivery servies';
+    font-size: small;
+    padding: 20px;
+    color:rgb(112, 112, 112);
+}
+.temp{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.head{
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.head::after{
+    content: "Our Products Long-lasting, Artistic and also used and recommended by many professionals";
+    font-size: small;
+    color: rgb(112, 112, 112);
+    padding: 20px;
+}
+.proImg{
+    margin: 30px;
+    width: 100vh;
+    height: auto;
+}
+.bHead{ 
+    letter-spacing: 2PX;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px;
+    background-color:rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 5vh;
+}
+.hButton{
+    padding: 10px;
+    border-radius: 10px;
+    background:linear-gradient(90deg,rgb(3, 96, 158),rgb(2, 196, 196));
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.hButton:active{
+    transition: all 0.5s ease 0s;
+    opacity: 0.4;
+}
+.hText{
+    display: grid;
+}
+.hText::after{
+    content: 'Origano provides you with hand crafted Trumbones with long lasting capabilities';
+    padding: 20px;
+    color: rgb(212, 212, 212);
+    font-size: X-small;
+}
+.feats{
+    display: flex;
+     grid-gap: 40px;
+}
+.b1{
+    font-size: 25PX;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.navTog{
+    display: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    transform: scaleX(-1);
+}
+.navCancel{
+    margin: 5px;
+    margin-right: 25px;
+    width: 35px;
+    height: 35px;
+}
+.togContents{
+    z-index: 1;
+    position: fixed;
+    display:none;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 20px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform-origin: top;
+}
+.openTog{
+    animation-name: openNav;
+   animation-duration: 0.6s;
+}
+.closeTog{
+    animation-name: closeNav;
+    animation-duration: 0.6s;
+}
+.togItem{
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    width: auto;
+}
+.togItem:hover{
+    color: white;
+    background: linear-gradient(90deg,rgb(0, 107, 126),aqua);
+}
+@media (max-width: 800px) {
+    .navContents{
+        display: none;
+    }
+    .navTog{
+       display: block;
+    }
+    .togContents{
+        display: grid;
+    }
+    .proImg{
+        width: 70vh;
+        height: auto;
+    }
+    .feats{
+        flex-direction: column;
+    }
+}
+
+.hidden{
+    display: none;
+}
+.appear{
+    animation-name: app;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+
+@keyframes openNav { 
+    0%{
+        transform: rotateX(-90deg);
+    }
+    75%{
+        transform: rotateX(-10deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+@keyframes closeNav {
+    0%{
+        transform: rotateX(0deg);
+    }
+    75%{
+        transform: rotateX(80deg);
+    }
+    100%{
+        transform: rotateX(90deg);
+    }
+}
+@keyframes app {
+    0%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
