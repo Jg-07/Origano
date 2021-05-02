@@ -17,8 +17,12 @@
     background: linear-gradient(180deg,rgb(0, 105, 153),rgb(0, 175, 175),rgb(0, 247, 193)); 
 }
 body{
-    overflow-x: hidden;
     background-color: rgb(255, 255, 255);
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .navbar{
     top:0;
@@ -63,16 +67,10 @@ body{
     color: black;
     background-color: white;
 }
-.body1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .bodyBlock1{
     cursor: pointer;
     margin-top: 70px;
-    width: 100%;
+    width: auto;
     display: flex;
     background: url("BG.jpg");
     justify-content: center;
@@ -82,11 +80,11 @@ body{
 .bodyBlock2{
     width: 70%;
     cursor: pointer;
+    margin-top: 120px;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     padding: 30px;
-    margin: 130px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -141,9 +139,8 @@ body{
 .bHead{ 
     letter-spacing: 2PX;
     color: white;
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
-    margin: 50px;
     background-color:rgba(0, 0, 0, 0.521);
     backdrop-filter: blur(10px);
     text-align: center;
