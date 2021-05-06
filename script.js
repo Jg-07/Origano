@@ -1,7 +1,8 @@
 'use strict';
 let navbar = document.querySelector('.navbar');
+let navBrand = document.querySelector('.navBrand');
 let togDisp = document.querySelector('.togContents');
-let navCancel = document.querySelector('.navCancel')
+let navCancel = document.querySelector('.navCancel');
 let navTog = document.querySelector('.navTog');
 navTog.addEventListener('click', function () {
     togDisp.classList.remove('closeTog');
@@ -29,33 +30,74 @@ window.addEventListener('click', function (event) {
 })
 product.addEventListener('click', function () {
     window.scrollTo({
-        top: 650,
+        top: 530,
         behavior: "smooth",
     });
+    product.classList.add('navC');
+    feature.classList.remove('navC');
+    working.classList.remove('navC');
 });
 product1.addEventListener('click', function () {
     window.scrollTo({
-        top: 730,
+        top: 680,
         behavior: "smooth",
     });
 });
 feature.addEventListener('click', function () {
     window.scrollTo({
-        top: 1600,
+        top: 1350,
         behavior: "smooth",
     })
+    product.classList.remove('navC');
+    feature.classList.add('navC');
+    working.classList.remove('navC');
 })
 feature1.addEventListener('click', function () {
     window.scrollTo({
-        top: 1600,
+        top: 1340,
         behavior: "smooth",
     })
 })
+working.addEventListener('click', function () {
+    window.scrollTo({
+        top: 2280,
+        behavior: "smooth",
+    })
+    product.classList.remove('navC');
+    feature.classList.remove('navC');
+    working.classList.add('navC');
+})
+working1.addEventListener('click', function () {
+    window.scrollTo({
+        top: 3170,
+        behavior: "smooth",
+    })
+})
+navBrand.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    })
+    product.classList.remove('navC');
+    feature.classList.remove('navC');
+    working.classList.remove('navC');
+})
+
 window.onscroll = function () {
-    if (window.scrollY >= 620) {
+    if (window.scrollY >= 480) {
         navbar.classList.add('navcolor');
+        togDisp.classList.add('navcolor');
     }
     else {
         navbar.classList.remove('navcolor');
+        togDisp.classList.remove('navcolor');
+    }
+    if (window.scrollY == 0) {
+        product.classList.remove('navC');
+        feature.classList.remove('navC');
+        working.classList.remove('navC');
     }
 }
+
+
+
