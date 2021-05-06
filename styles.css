@@ -291,6 +291,29 @@ body{
  width: 500px;
  height: 280px;
 }
+@media (max-width:900px){
+    .frame{
+        flex-direction: column;
+      }
+    .temp{
+        width: 80%;
+    }
+    .feats{
+        align-items: center;
+    }
+    .ftext{
+        font-size: large;
+    }
+    .text1{
+        text-align: justify;
+        font-size: medium;
+        font-weight: normal;
+      }
+      .video{
+        width: 400px;
+        height: 220px;
+     }
+}
 @media (max-width: 800px) {
     *{
         font-size: 20px;
@@ -332,30 +355,6 @@ body{
        height: 220px;
     }
 }
-@media (max-width:900px){
-    .frame{
-        flex-direction: column;
-      }
-    .temp{
-        width: 80%;
-    }
-    .feats{
-        align-items: center;
-    }
-    .ftext{
-        font-size: large;
-    }
-    .text1{
-        text-align: justify;
-        font-size: medium;
-        font-weight: normal;
-      }
-      .video{
-        width: 400px;
-        height: 220px;
-     }
-}
-
 .navC{
   transition: none;
   color: rgb(0, 156, 196);
