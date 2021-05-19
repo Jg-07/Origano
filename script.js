@@ -38,6 +38,7 @@ product.addEventListener('click', function () {
     });
     product.classList.add('navC');
     feature.classList.remove('navC');
+    pricing.classList.remove('navC');
     working.classList.remove('navC');
 });
 product1.addEventListener('click', function () {
@@ -54,6 +55,7 @@ feature.addEventListener('click', function () {
     product.classList.remove('navC');
     feature.classList.add('navC');
     working.classList.remove('navC');
+    pricing.classList.remove('navC');
 })
 feature1.addEventListener('click', function () {
     window.scrollTo({
@@ -68,9 +70,26 @@ working.addEventListener('click', function () {
     })
     product.classList.remove('navC');
     feature.classList.remove('navC');
+    pricing.classList.remove('navC');
     working.classList.add('navC');
 })
 working1.addEventListener('click', function () {
+    window.scrollTo({
+        top: 3170,
+        behavior: "smooth",
+    })
+})
+pricing.addEventListener('click', function () {
+    window.scrollTo({
+        top: 2850,
+        behavior: "smooth",
+    })
+    product.classList.remove('navC');
+    feature.classList.remove('navC');
+    working.classList.remove('navC');
+    pricing.classList.add('navC');
+})
+pricing1.addEventListener('click', function () {
     window.scrollTo({
         top: 3170,
         behavior: "smooth",
@@ -84,11 +103,15 @@ navBrand.addEventListener('click', function () {
     product.classList.remove('navC');
     feature.classList.remove('navC');
     working.classList.remove('navC');
+    pricing.classList.remove('navC');
 })
 
 window.onscroll = function () {
     if (window.scrollY == 0) {
-        pro.classList.remove('navC');
+        product.classList.remove('navC');
+        feature.classList.remove('navC');
+        pricing.classList.remove('navC');
+        working.classList.remove('navC');
     }
     if (window.scrollY >= 480) {
         navbar.classList.add('navcolor');
