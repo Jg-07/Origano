@@ -4,6 +4,9 @@ let navBrand = document.querySelector('.navBrand');
 let togDisp = document.querySelector('.togContents');
 let navCancel = document.querySelector('.navCancel');
 let navTog = document.querySelector('.navTog');
+let pro = document.querySelector('#product');
+let fea = document.querySelector('#feature');
+let work = document.querySelector('#working');
 navTog.addEventListener('click', function () {
     togDisp.classList.remove('closeTog');
     togDisp.classList.add('openTog');
@@ -84,6 +87,9 @@ navBrand.addEventListener('click', function () {
 })
 
 window.onscroll = function () {
+    if (window.scrollY == 0) {
+        pro.classList.remove('navC');
+    }
     if (window.scrollY >= 480) {
         navbar.classList.add('navcolor');
         togDisp.classList.add('navcolor');
@@ -91,11 +97,6 @@ window.onscroll = function () {
     else {
         navbar.classList.remove('navcolor');
         togDisp.classList.remove('navcolor');
-    }
-    if (window.scrollY == 0) {
-        product.classList.remove('navC');
-        feature.classList.remove('navC');
-        working.classList.remove('navC');
     }
 }
 

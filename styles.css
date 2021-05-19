@@ -133,6 +133,11 @@ body{
     border-radius: 10px;
     height: 105px;
 }
+.temp .img1{
+    width: 155px;
+    padding: 10px;
+    height: 105px;
+}
 .ftext{
     font-family: 'PT Serif';
     font-size: medium;
@@ -291,6 +296,15 @@ body{
  width: 500px;
  height: 280px;
 }
+/*embed{
+    opacity: 0;
+    pointer-events: 0;
+    width: 0;
+    height: 0;
+}
+#trum:checked ~ embed{
+   display: block;
+}*/
 @media (max-width:900px){
     .frame{
         flex-direction: column;
@@ -355,11 +369,6 @@ body{
        height: 220px;
     }
 }
-.navC{
-  transition: none;
-  color: rgb(0, 156, 196);
-  border-bottom: 2px rgb(0, 156, 196) solid;
-}
 .hidden{
     display: none;
 }
@@ -405,3 +414,7 @@ body{
         opacity: 1;
     }
 }
+.navC{
+    color: rgb(0, 156, 196);
+    border-bottom: 2px rgb(0, 156, 196) solid;
+  }
