@@ -33,7 +33,7 @@ window.addEventListener('click', function (event) {
 })
 product.addEventListener('click', function () {
     window.scrollTo({
-        top: 530,
+        top: 650,
         behavior: "smooth",
     });
     product.classList.add('navC');
@@ -49,7 +49,7 @@ product1.addEventListener('click', function () {
 });
 feature.addEventListener('click', function () {
     window.scrollTo({
-        top: 1350,
+        top: 1450,
         behavior: "smooth",
     })
     product.classList.remove('navC');
@@ -65,7 +65,7 @@ feature1.addEventListener('click', function () {
 })
 working.addEventListener('click', function () {
     window.scrollTo({
-        top: 2280,
+        top: 2380,
         behavior: "smooth",
     })
     product.classList.remove('navC');
@@ -81,7 +81,7 @@ working1.addEventListener('click', function () {
 })
 pricing.addEventListener('click', function () {
     window.scrollTo({
-        top: 2850,
+        top: 2950,
         behavior: "smooth",
     })
     product.classList.remove('navC');

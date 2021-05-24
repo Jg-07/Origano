@@ -23,7 +23,7 @@ body{
     background-color:rgb(35, 49, 58);
 }
 footer{
-    background-color: rgb(35, 49, 58);
+    background-color: rgb(35, 35, 36);
     color: white;
     font-size: small;
     padding: 100px;
@@ -59,10 +59,7 @@ footer{
     margin-right: 25px;
     font-size: medium;
 }
-.navItem:hover{
-    color: rgb(0, 204, 255);
-    transition: all 0.5s ease 0s;
-}
+
 .navBrand img{
     border-radius: 7px;
 }
@@ -169,6 +166,8 @@ footer{
     margin: 30px;
     width: 100vh;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 10px rgb(35, 49, 58);
 }
 .bHead{ 
     letter-spacing: 2PX;
@@ -425,6 +424,6 @@ footer{
     }
 }
 .navC{
-    color: rgb(0, 156, 196);
-    border-bottom: 2px rgb(0, 156, 196) solid;
+    color: rgb(19, 209, 130);
+    border-bottom: 2px rgb(19, 209, 130) solid;
   }
